@@ -2,7 +2,7 @@ resource "aws_lb" "test" {
   name               = "${var.name}-${var.env}"
   internal           = var.internal
   load_balancer_type = var.load_balancer_type
-  subnets            = var.Subnets
+  subnets            = var.subnets
 
   enable_deletion_protection = var.enable_delete_protection
 
