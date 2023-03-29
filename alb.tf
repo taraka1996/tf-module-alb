@@ -14,8 +14,8 @@ resource "aws_lb" "main" {
 }
 
 resource "aws_security_group" "main" {
-  name        = "${var.component}-${var.env}-lb"
-  description = "${var.component}-${var.env}-lb"
+  name        = "${var.name}-${var.env}-lb"
+  description = "${var.name}-${var.env}-lb"
   vpc_id      = var.vpc_id
 
  
